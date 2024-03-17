@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 80px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.title-box {
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    padding: 50px;
+}
+
+header H1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+header p {
+    font-size: 25px;
+    text-align: center;
+}
+
+header H1,P,li {
+    font-family: "kenia", "cursive";
+}
+
+/* slider */
+
+.slider {
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+    width: calc(500px * 4);
+    height: 720px;
+    animation: glisse 12s infinite ease;   
+}
+
+.slide {
+    opacity: 0.7;
+}
+
+@keyframes glisse {
+    0% {
+        transform: translateX(0);   
+    }
+
+    10% {
+        transform: translateX(-900px);
+    }
+    33% {
+        transform: translateX(-2500px);
+    }
+    66% {
+        transform: translateX(700px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+/* navigation menu */
+
+.section-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav.menu {
+    width: calc(500px * 4);
+}
+
+nav.menu ul {
+    display: flex;
+}
+
+nav.menu ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav.menu ul li a {
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.nav-item {
+    flex: 1;
+    height: 300px;
+}
+
+.burger {
+    background: url(../burger-banner.jpg) 100%;
+}
+
+.pizza {
+    background: url(../pizza-banner.jpg) 100%;
+}
+
+.salade {
+    background: url(../salad-banner.jpg) 100%;
+}
+
+.boisson {
+    background: url(../boisson-banner.jpg) 100%;
+}
+
+
+
