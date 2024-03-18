@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Croustishop - restaurant</title>
+    <title>La Mirabelle - restaurant</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
     <body>
     <!-- balise pour le haut de page -->
@@ -15,7 +18,7 @@
                 <div class="title-box">
                 <!-- Titre pour ma page -->
                     <h1>
-                    CROUSTISHOP
+                    La Mirabelle
                     </h1>
                     <!-- slogant de ma page -->
                     <p>Des petits plats tout en douceur</p>
@@ -32,18 +35,179 @@
         </header>
                     <!-- menu de navigation -->  
          
-        <div class="section-container">
+        <div id="sticky-header" class="section-menu">
             <nav class="menu">
                 <ul>
-                    <li  class="nav-item burger"><a href="">Nos Burger</a>
+                    <li class="nav-item pizza"><a href="#pizza">Nos Pizzas</a>
                     </li>
-                    <li class="nav-item pizza"><a href="">Nos Pizzas</a>
+                    <li class="nav-item salade"><a href="#salade">Nos Salades</a>
                     </li>
-                    <li class="nav-item salade"><a href="">Nos Salades</a>
+                    <li  class="nav-item burger"><a href="#burger">Nos Burger</a>
                     </li>
-                    <li class="nav-item boisson"><a href="">Nos Boissons</a>
+                    <li class="nav-item boisson"><a href="#boisson">Nos Boissons</a>
                     </li>
                 </ul>
-             </nav>   
+             </nav> 
+         </div> 
+         
+        <main id="main">
+                    <!-- sections pizza-->
+
+            <section id="pizza" class="pizza">
+                <p class="categorie">Nos Pizza</p>
+                
+                <div class="item">
+                    <img src="pizza1.jpg">
+                    <div class="item-infos">
+                            <h3>Caprapiquante</h3>
+                            <hr>
+                            <p>Chevre, miel, graines toastés, pimment rouge</p>
+                            <p class="prix">12€00</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="pizza2.jpg">
+                    <div class="item-infos">
+                        <h3>Strategia</h3>
+                        <hr>
+                        <p>Tomates, mozarella, basilique</p>
+                        <p class="prix">09€00</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="pizza3.jpg">
+                    <div class="item-infos">    
+                        <h3>Naturale</h3>
+                        <hr>
+                        <p>Chèvre, courgettes, basilique, carrottes, huile végétal</p>
+                        <p class="prix">10€00</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- section salade -->
+
+            <section id="salade" class="salade">
+                <p class="categorie">Nos Salade</p>
+                
+                <div class="item">
+                    <img src="salade1.jpg">
+                    <div class="item-infos">
+                        <h3>Salade poulet betterave</h3>
+                        <hr>
+                        <p>Poulet, mache, betterave, avocat, croutons</p>
+                        <p class="prix">5€00</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="salade2.jpg">
+                    <div class="item-infos">
+                        <h3>Salade grec maison</h3>
+                        <hr>
+                        <p>salade, tomates, olives, oignons, basilique</p>
+                        <p class="prix">04€00</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="salade3.jpg">
+                    <div class="item-infos">    
+                        <h3>Salade tomates mozarella</h3>
+                        <hr>
+                        <p>tomates, mozarella, salade, mache, epignard</p>
+                        <p class="prix">06€00</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- section Burger -->
+
+            <section id="burger" class="burger">
+                <p class="categorie">Nos Burger</p>
+                
+                <div class="item">
+                    <img src="burger1.jpg">
+                    <div class="item-infos">
+                        <h3>Légendaire</h3>
+                        <hr>
+                        <p>1 steack, bacon, chedar</p>
+                        <p class="prix">4€00</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="burger2.jpg">
+                    <div class="item-infos">
+                        <h3>Villageois</h3>
+                        <hr>
+                        <p>1 steack, chedar, salade, oignons</p>
+                        <p class="prix">05€00</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="burger3.jpg">
+                    <div class="item-infos">    
+                        <h3>Basique</h3>
+                        <hr>
+                        <p>2 steacks, chedar, oignons</p>
+                        <p class="prix">05€00</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- section boisson -->
+
+            <section id="boisson" class="boisson">
+                <p class="categorie">Nos Boisson</p>
+                
+                <div class="item">
+                    <img src="boisson1.jpg">
+                    <div class="item-infos">
+                        <h3>Jus Multifruits</h3>
+                        <hr>
+                        <p>Banane, orange, fraise</p>
+                        <p class="prix">03€00</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="boisson2.jpg">
+                    <div class="item-infos">
+                        <h3>Juse de pastèque</h3>
+                        <hr>
+                        <p>Pastèque du jardin</p>
+                        <p class="prix">02€20</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="boisson3.jpg">
+                    <div class="item-infos">    
+                        <h3>Café</h3>
+                        <hr>
+                        <p>Expresso, café long, café crème, capuccino...</p>
+                        <p class="prix">01€20</p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <!-- pied de page (Footer) -->
+
+        <footer>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2615.636772751065!2d7.941801776874513!3d49.03651498815434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796f6990a2c7687%3A0xe5f05b7ab173da9!2sLa%20Mirabelle!5e0!3m2!1sfr!2sfr!4v1710779202460!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p> &copy; 2020 - La Mirabelle by Ludovic | Tout droits réservés</p>
+        </footer>
+        <!-- charge le script javascript -->
+        <script src="stickyscroll.js"></script>
+        
     </body>
 </html>
